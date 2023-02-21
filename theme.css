@@ -5,7 +5,7 @@ body {
 
 #register-form,
 #login-form {
-    display: none;
+    display: block;
 }
 
 header {
@@ -43,7 +43,7 @@ header nav a {
 }
 
 .form-group {
-    display: none;
+    display: block;
     padding: 10px;
     font-size: 20px;
     width: 300px;
