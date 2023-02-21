@@ -5,7 +5,7 @@ body {
 
 #register-form,
 #login-form {
-    display: block;
+    display: none;
 }
 
 header {
