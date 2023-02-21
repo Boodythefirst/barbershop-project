@@ -30,7 +30,7 @@ exit();
 
 <body>
     <header>
-        <img src="Logo.png">
+        <img id="logo" src="Logo.png">
         <p> Welcome,
             <span style="color:beige;font-weight: bold"><?php echo $fname; ?></span>!
         </p>
@@ -40,7 +40,7 @@ exit();
             <a href="#" id="logout-button" onclick="logout()">Logout</a>
         </nav>
     </header>
-    <div class="dashboard">
+    <div id="dashboard">
         <div class="card">
             <h3>Book your next appointment</h3>
             <button id="make-app-button" class="card-button" onclick="makeAppointment()">Make An Appointment</button>
@@ -59,7 +59,7 @@ exit();
         </div>
     </div>
 
-    <div class="form-group" id="appointment-form">
+    <div id="appointment-form">
         <form action="makeAppointment.php" method="POST">
             <select name="service" id="service" class="form-input" placeholder="Service" required>
                 <option value="Haircut">Haircut Only</option>
@@ -85,13 +85,13 @@ exit();
 
     <script>
         function makeAppointment() {
-            document.querySelector(".form-group").style.display = "block";
-            document.querySelector(".dashboard").style.display = "none";
+            document.getElementById("dashboard").style.display = "none";
+            document.getElementById("appointment-form").style.display = "block";
         }
 
         function backToDashboard() {
-            document.querySelector(".form-group").style.display = "none";
-            document.querySelector(".dashboard").style.display = "block";
+            document.getElementById("appointment-form").style.display = "none";
+            document.getElementById("dashboard").style.display = "block";
             window.location.href = "dashboard.php";
         }
 

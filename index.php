@@ -24,16 +24,16 @@
     <!-- Registration Form -->
     <div style="height:400px;" id="register-form">
         <form action="register.php" method="post">
-            <div class="form-group">
+            <div>
                 <input type="text" id="first_name" name="first_name" class="form-input" placeholder="First Name" required>
             </div>
-            <div class="form-group">
+            <div>
                 <input type="text" id="last_name" name="last_name" class="form-input" placeholder="Last Name" required>
             </div>
-            <div class="form-group">
+            <div>
                 <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
             </div>
-            <div class="form-group">
+            <div>
                 <input type="password" id="password" name="password" class="form-input" placeholder="Password" required>
             </div>
             <div>
@@ -46,10 +46,10 @@
     <div style="height:250px;" id="login-form">
         <p>Enter your credentials</p>
         <form action="login.php" method="post">
-            <div class="form-group">
+            <div>
                 <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
             </div>
-            <div class="form-group">
+            <div>
                 <input type="password" id="password" name="password" class="form-input" placeholder="Password" required>
             </div>
             <div>
